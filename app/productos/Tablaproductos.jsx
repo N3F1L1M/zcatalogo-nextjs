@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Tablaproductos = () => {
+const Tablaproductos = (props) => {
   return (
      <div className="overflow-x-auto p-5">
     <table className="w-full  ">
@@ -15,9 +15,9 @@ const Tablaproductos = () => {
         </thead>
         <tbody>
             <tr className="border border-gray-300">
-                <td className="border border-gray-300 px-4 py-2"></td>
-                <td className="border border-gray-300 px-4 py-2"></td>
-                <td className="border border-gray-300 px-4 py-2"></td>
+                <td className="border border-gray-300 px-4 py-2">{JSON.stringify(props.productos)}</td>
+                <td className="border border-gray-300 px-4 py-2">como </td>
+                <td className="border border-gray-300 px-4 py-2">estas</td>
                 <td className="border border-gray-300 px-4 py-2">
                     <img width="100" src="@favicon.ico" className="rounded" alt=""/>
                 </td>
